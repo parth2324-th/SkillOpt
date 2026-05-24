@@ -418,11 +418,12 @@
       box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
     }
 
-    .video-frame video {
+    .video-frame iframe {
       width: 100%;
       aspect-ratio: 16 / 9;
       display: block;
       background: #0d1117;
+      border: 0;
       border-radius: 4px;
     }
 
@@ -1262,10 +1263,12 @@
         </div>
       </div>
       <figure class="video-frame">
-        <video controls preload="metadata" playsinline poster="skillopt-assets/teaser-1.png">
-          <source src="skillopt-assets/skillopt_teaser.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <iframe
+          src="https://www.youtube.com/embed/JUBMDTCiM0M"
+          title="SkillOpt project video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
       </figure>
       <p class="teaser-caption">
         Promotional video for the SkillOpt project page. The static paper teaser is shown below for high-resolution inspection.
